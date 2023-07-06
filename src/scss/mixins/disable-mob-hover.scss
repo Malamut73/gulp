@@ -1,0 +1,12 @@
+// Используется для проверки поддердивает устройство наведение курсора
+//     @include hover{
+//         color: orange;
+//     }
+@mixin hover {
+    @media (any-hover: hover) {
+      &:hover {
+        @content;
+      }
+    }
+  }
+  

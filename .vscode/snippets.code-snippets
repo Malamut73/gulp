@@ -1,0 +1,169 @@
+{
+	"burger": {
+	  "scope": "html",
+	  "prefix": "g-burger",
+	  "body": [
+		"<button class=\"burger $1 \" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+		"  <span class=\"burger__line\"></span>",
+		"</button>",
+		"$2"
+	  ],
+	  "description": "Snippet for burger btn"
+	},
+	"popup": {
+		"scope": "html",
+		"prefix": "g-popup",
+		"body": [
+			"<!-- for all fixed block we need added class lock-pading -->",
+			"<a href=\"#popup-one\" class=\"popup-link\"></a>",
+			"<div class=\"popup\" id=\"popup-one\">",
+			"   <div class=\"popup__content\">",
+			"      <a href=\"#popup-second\" class=\"popup__close close-popup\">x</a>",
+			"      <div class=\"popup__title\">",
+			"         ",
+			"      </div>",
+			"   </div>",
+			"</div>"
+		],
+		"description": "Snippet for popup"
+	},
+	"form": {
+		"scope": "html",
+		"prefix": "g-form",
+		"body": [
+			"<!-- <form id=\"form\" action=\"#\" class=\"form form-popup\"> Раскоментировать эту строку если форма находится в popup-->",
+			"<form id=\"form\" action=\"#\" class=\"form\">",
+			"     <h3 class=\"form__title\"></h3>",
+			"     <div class=\"form__item\">",
+			"         <label class=\"form__label\" for=\"name\"></label>",
+			"         <input class=\"form__input req\" name=\"name\" type=\"text\" id=\"name\" placeholder=\"\">",
+			"     </div>",
+			"     <div class=\"form__item\">",
+			"         <label class=\"form__label\" for=\"phone\"></label>",
+			"         <input id=\"phone\" class=\"form__input phone req\" name=\"phone\" type=\"tel\" placeholder=\"\">",
+			"     </div>",
+			" ",
+			"     <div class=\"form__item\">",
+			"        <label class=\"form__label\" for=\"email\"></label>",
+			"        <input class=\"form__input req email\" type=\"text\" name=\"email\" id=\"email\" placeholder=\"\">",
+			"     </div>",
+			" ",
+			"     <div class=\"form__item\">",
+			"        <div class=\"form__label\"></div>",
+			"        <div class=\"options\">",
+			"             <div class=\"options__item\">",
+			"                <input type=\"radio\" value=\"\" name=\"radio\" id=\"radio1\" class=\"options__input\" checked>",
+			"                <label class=\"options__label\" for=\"radio1\"><span></span></label>",
+			"             </div>",
+			"             <div class=\"options__item\">",
+			"                 <input type=\"radio\" value=\"\" name=\"radio\" id=\"radio2\" class=\"options__input\">",
+			"                 <label class=\"options__label\" for=\"radio2\"><span></span></label>",
+			"             </div>",
+			"         </div>",
+			"     </div>",
+			" ",
+			"     <div class=\"form__item\">",
+			"         <div class=\"form__label\"></div>",
+			"         <select name=\"select\" class=\"form__select\">",
+			"             <option value=\"\" selected=\"selected\"></option>",
+			"             <option value=\"\"></option>",
+			"             <option value=\"\"></option>",
+			"         </select>",
+			"     </div>",
+			" ",
+			"     <div class=\"form__item\">",
+			"         <label class=\"form__label\" for=\"description\"></label>",
+			"         <textarea class=\"form__input\" name=\"description\" id=\"description\"></textarea>",
+			"     </div>",
+			" ",
+			"     <div class=\"form__item\">",
+			"         <div class=\"checkbox\">",
+			"             <input type=\"checkbox\" checked name=\"agreement\" id=\"agreement\" class=\"checkbox req checkbox__input\">",
+			"             <label for=\"agreement\" class=\"checkbox__label\">",
+			"                 <span>Я даю свое согласие на обрабоку персональных данных в соответствии с",
+			"                     <a href=\"#\">Условиями</a>*",
+			"                 </span>",
+			"             </label>",
+			"         </div>",
+			"      </div>",
+			" ",
+			"     <button class=\"form__button\" type=\"submit\">",
+			"         Отправить",
+			"     </button>",
+			" </form>",
+	
+		],
+		"description": "Snippet for popup"
+	},
+	"scroll": {
+		"scope": "html",
+		"prefix": "g-scroll",
+		"body": [
+			"<a class=\"$1\" data-goto=\".scroll\" href=\"#\"></a>",
+			"<div class=\"$2 scroll\">$3</div>"
+		],
+		"description": "Snippet for @include scroll;"
+	},
+	"menuBurger": {
+		"scope": "html",
+		"prefix": "g-menu",
+		"body": [
+			"<div class=\"$1 menu\">",
+    		"    <div class=\"menu__icon\">",
+        	"       <span></span>",
+    		"    </div>",
+    		"    <nav class=\"menu__body\">",
+        	"      <ul class=\"menu__list\">",
+            "         <li>",
+            "            <a data-goto=\".page__section_1\" href=\"#\" class=\"menu__link\">section_1</a>",
+            "         </li>",
+            "         <li>",
+            "            <a data-goto=\".page__section_1\" href=\"#\" class=\"menu__link\">section_2</a>",
+            "            <span class=\"menu__arrow\"></span>",
+            "            <ul class=\"menu__sub-list\">",
+            "               <li>",
+            "                  <a href=\"#\" class=\"menu__sub-link\">Раздел №1</a>",
+            "               </li>",
+            "               <li>",
+            "                  <a href=\"#\" class=\"menu__sub-link\">Раздел №2</a>",
+            "               </li>",
+            "            </ul>",
+            "         </li>",
+            "         <li>",
+            "            <a data-goto=\".page__section_1\" href=\"#\" class=\"menu__link\">section_3</a>",
+            "         </li>",
+            "      </ul>",
+    		"   </nav>",
+			"</div>"
+		],
+		"description": "Snippet for menu + burger"
+	},
+	"dinamicAdaptive": {
+		"scope": "html",
+		"prefix": "g-dinamicAdaptive",
+		"body": [
+			"<!-- Первым указывается класс куда вставлять,", 
+			"Воторой параметр порядок вставки, ",
+			"Третий расзрешение экрана -->",
+
+			"<div data-da=\"content__column_1,2,1280\">Some text</div>",
+
+			"<div class=\"content__row\">",
+    		"   <div class=\"content__column_1\">",
+        	"       <h2></h2>",
+        	"       <a href=\"#\"></a>",
+    		"   </div>",
+			"</div>"
+		],
+		"description": "Snippet for dinamic adaptive"
+	},
+	"flexAll": {
+		"scope": "scss",
+		"prefix": "g-flexAll",
+		"body": [
+		  "@include flex-all-center;"
+		],
+		"description": "Snippet for @include flex-all-center;"
+	},
+
+}
